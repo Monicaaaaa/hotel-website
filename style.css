@@ -47,7 +47,6 @@ p {
     color: #fff;
     padding: 13px 20px;
     font-size: 18px;
-
 }
 
 .btn:hover {
@@ -67,12 +66,16 @@ p {
 
 .bg-light {
     background: #f4f4f4;
-    color: #fff;
+    color: #333;
 }
 
 .bg-primary {
-    background: #333;
-    color: #f4f4f4; 
+    background: #F7C08A; 
+    color: #333;
+}
+
+.clr {
+    clear: both;
 }
 
 /***** Header *****/
@@ -168,4 +171,22 @@ p {
     padding-bottom: 30px;
 }
 
-   
+/***** Features *****/
+.feature {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+}
+
+.feature i {
+    margin-bottom: 10px;
+}
+
+/***** Footer *****/
+#footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
