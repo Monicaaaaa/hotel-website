@@ -79,6 +79,7 @@ p {
 
 .l-heading {
     font-size: 40px;
+    line-height: 1.2;
 }
 
 /* Padding */
@@ -99,14 +100,14 @@ p {
     display: block;
 }
 
-#navbar h1 {
+#navbar .logo {
     float: left;
     padding: 20px;
 }
 
 #navbar ul {
     list-style-type: none;
-    float: right
+    float: right;
 }
 
 #navbar ul li {
@@ -135,7 +136,6 @@ p {
     background-position: center center;
     background-size: cover;
     height: 600px;
-
 }
 
 #intro .intro-content {
@@ -156,7 +156,7 @@ p {
 
 /***** Info *****/
 #home-info {
-    height: 400px;
+    height: 450px;
 }
 
 #home-info .info-img {
@@ -194,6 +194,8 @@ p {
 }
 
 /***** About Page *****/
+
+/***** About *****/
 #about .about-left {
     float: left;
     width: 50%;
@@ -213,8 +215,9 @@ p {
     margin: auto;
 }
 
+/***** Testimonials *****/
 #testimonials {
-    height: 600px;
+    height: 100%;
     background-image: url("images/test-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -278,4 +281,68 @@ p {
     background: #444;
     color: #fff;
     padding: 20px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    /***** Home Page *****/
+    #navbar .logo {
+        float: none;
+        text-align: center;
+    }
+    #navbar ul, #navbar ul li {
+        float: none;
+    }
+    #navbar ul li a {
+        padding: 5px;
+        border-bottom: 1px dotted #444;
+    }
+
+    /* Info */
+    #intro {
+        height: 100%;
+    }
+    #intro .intro-content {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    #home-info .info-img {
+        display: none;
+    }
+    #home-info .info-content {
+        float: none;
+        width: 100%;
+    }
+
+    /* Features */
+    .feature {
+        float: none;
+        width: 100%;
+    }
+
+    /***** About Page *****/
+
+    /* About */
+    #about .about-right,
+    #about .about-left {
+        float: none;
+        width: 100%;
+    }
+    #about .about-right {
+        margin-top: 30px;
+    }
+    .l-heading {
+        text-align: center;
+    }
+
+     /***** Contact form *****/
+     #contact-form .form-group {
+        margin-bottom: 1px dotted #444;
+    }
+
+
+
+
 }
